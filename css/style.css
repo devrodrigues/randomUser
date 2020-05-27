@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.topo {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.topo h1 {
+    font-size: 3.5em;
+    height: 120px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.topo div {
+    font-size: 1.5em;
+    color: rgb(105, 104, 104);
+    text-align: center;
+    background: rgb(252, 179, 45);
+    position: absolute;
+    top: 1px;
+}
+
+.busca {
+    height: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.busca input {
+    border: none;
+    border-bottom: 2px solid cadetblue;
+    padding: 5px;
+    width: 80%;
+    font-size: 1.2em;
+}
+
+.busca button {
+    border: 1px solid;
+    border-radius: 8%;
+    background: cadetblue;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px;
+    cursor: pointer;
+}
+
+input[type="text"]:disabled {
+    background: rgb(219, 218, 218);
+}
+
+button:disabled {
+    background: rgb(206, 206, 206);
+    cursor: default;
+}
+
+.busca input:focus {
+    outline: 0;
+}
+
+.filtro, .estatisticas {
+    border: 1px solid gray;
+    font-size: 2em;
+    padding: 10px;
+    margin: 5px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    font-size: 0.7em;
+    padding: 5px;
+}
+
+.usuario img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.usuario span {
+    margin-right: 5px;
+}
+
+.principal h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.estatisticas span {
+    display: block;
+    font-size: 0.6em;
+}

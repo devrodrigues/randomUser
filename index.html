@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Módulo 1 (Bootcamp IGTI)</title>
+    <link href="./css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="topo container">
+        <h1>Pesquisa de usuários</h1>
+        <div id="carrega-pagina">Carregando página...</div>
+    </header>
+
+    <section class="busca container">
+        <form>
+            <input type="text" id="campo-busca" placeholder="Busca" disabled>
+            <button id="btn-busca" disabled>Buscar</button>
+        </form>
+    </section>
+
+    <main class="principal flex container">
+
+        <div class="filtro">
+
+            <h2 id="info-usuarios">Nenhum usuário filtrado</h2>
+            <div id="lista-usuarios"></div>
+            <!--
+            <div class="usuario">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            -->
+        </div>
+
+        <div class="estatisticas">
+
+            <h2 id="info-estatisticas">Nada a ser exibido</h2>
+            <div id="resultado-estatisticas">
+                <span id="qtHomens"></span>
+                <span id="qtMulheres"></span>
+                <span id="somaIdades"></span>
+                <span id="mediaIdades"></span>
+            </div>
+
+        </div>
+
+    </main>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
