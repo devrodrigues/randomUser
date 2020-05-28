@@ -152,9 +152,12 @@ function renderizar(usuarios, mulheres, homens, somaIdades, mediaIdades) {
     mediaHTML = document.querySelector('#mediaIdades');
 
 
-    if (usuarios.length > 1) {
+    if (usuarios.length >= 1) {
         resultadoPesquisa.textContent = `${usuarios.length} usuários(s) encontrado(s)`;
         estatisticas.textContent = 'Estatísticas';
+    } else {
+        resultadoPesquisa.textContent = `Nenhum resultado retornado.`;
+        mediaIdades = 0;
     }
 
     let usuariosHTML = '<div>';
