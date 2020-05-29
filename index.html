@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Módulo 1 (Bootcamp IGTI)</title>
+    <title>RandomUser</title>
     <link href="./css/reset.css" type="text/css" rel="stylesheet">
     <link href="./css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     
-    <header class="topo container">
-        <h1>Pesquisa de usuários</h1>
-        <div id="carrega-pagina">Carregando página...</div>
+    <header>
+        <div class="topo">
+            <h1>Random User</h1>
+            <div id="carrega-pagina">Carregando página...</div>
+        </div>
     </header>
 
-    <section class="busca container">
+    <section class="busca">
         <form>
             <input type="text" id="campo-busca" placeholder="Busca" disabled>
-            <button id="btn-busca" disabled>Buscar</button>
+            <button id="btn-busca" disabled>
+                <img src="./img/search.png" id="btn-img">
+            </button>
         </form>
     </section>
 
-    <main class="principal flex container">
+    <main class="principal">
 
         <div class="filtro">
 
-            <h2 id="info-usuarios">Nenhum usuário filtrado</h2>
+            <h2 id="info-usuarios">Resultado da busca</h2>
             <div id="lista-usuarios"></div>
             <!--
             <div class="usuario">
@@ -38,7 +42,7 @@
 
         <div class="estatisticas">
 
-            <h2 id="info-estatisticas">Nada a ser exibido</h2>
+            <h2 id="info-estatisticas">Estatísticas</h2>
             <div id="resultado-estatisticas">
                 <span id="qtHomens"></span>
                 <span id="qtMulheres"></span>

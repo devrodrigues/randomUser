@@ -1,27 +1,27 @@
 * {
     box-sizing: border-box;
+    font-family: Courier;
 }
 
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
+header {
+    background-image: linear-gradient(to right, rgb(69, 144, 146), rgb(63, 63, 247));
 }
 
 .topo {
-    text-align: center;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    height: 80px;
 }
 
 .topo h1 {
-    font-size: 3.5em;
-    height: 120px;
-    margin-top: 40px;
-    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 5px;
+    color: white;
 }
 
 .topo div {
@@ -37,6 +37,8 @@
     height: 80px;
     margin-bottom: 20px;
     text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .busca input {
@@ -49,13 +51,24 @@
 
 .busca button {
     border: 1px solid;
-    border-radius: 8%;
-    background: cadetblue;
+    border-radius: 50%;
+    background: rgb(130, 178, 180);
     color: white;
-    padding: 8px;
     font-weight: bold;
     font-size: 1.2em;
     margin: 5px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.busca img {
+    width: 20px;
+    height: 20px;
+    cursor: default;
+}
+
+.busca-img {
     cursor: pointer;
 }
 
@@ -73,7 +86,8 @@ button:disabled {
 }
 
 .filtro, .estatisticas {
-    border: 1px solid gray;
+    border: none;
+    box-shadow: 1px 1px 1px 1px grey;
     font-size: 2em;
     padding: 10px;
     margin: 5px;
@@ -95,10 +109,32 @@ button:disabled {
     margin-right: 5px;
 }
 
-.principal h2 {
-    font-weight: bold;
+.principal {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75em;
+    color: rgb(29, 28, 28);
+    max-width: 650px;
+    margin: 0 auto;
     margin-bottom: 10px;
     text-align: center;
+}
+
+.principal h2 {
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filtro, .estatisticas {
+    text-align: left;
+    flex-basis: 1;
+    height: 100%;
+}
+
+#lista-usuarios {
+    font-size: 0.9em;
 }
 
 .estatisticas span {
