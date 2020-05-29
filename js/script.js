@@ -55,7 +55,22 @@ async function fetchPessoas() {
 
 function carregouPagina() {
 
+    function liberarBotao(event) {
+
+        let texto = !!event.target.value && event.target.value.trim() !== '';
+    
+        if(texto) {
+            btnBusca.disabled = false;
+        } else {
+            btnBusca.disabled = true;
+        }
+    
+        btnBusca.addEventListener('click', busca);
+    
+    }
+
     campoBusca = document.querySelector('#campo-busca');
+    btnBusca = document.querySelector('#btn-busca');
     carregou = document.querySelector('#carrega-pagina');
 
     setInterval(() => {
@@ -69,22 +84,6 @@ function carregouPagina() {
     }, 1000);
 
     campoBusca.addEventListener('keyup', liberarBotao);
-
-}
-
-function liberarBotao(event) {
-
-    btnBusca = document.querySelector('#btn-busca');
-
-    let texto = !!event.target.value && event.target.value.trim() !== '';
-
-    if(texto) {
-        btnBusca.disabled = false;
-    } else {
-        btnBusca.disabled = true;
-    }
-
-    btnBusca.addEventListener('click', busca);
 
 }
 
